@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
+    height: 100vh;
     display: flex;
-    background-color: black;
-    font-family: georgia;
-    color: rgb(200, 200, 200);
     flex-direction: column;
-    outline: white ;
+    background-color: black;
+    font-family: Roboto, Arial, sans-serif;
+    color: rgb(200, 200, 200);
 }
 
 .header {
@@ -19,6 +21,7 @@ body {
 
 .content {
     display: flex;
+    flex: 1;
     text-align: center;
     justify-content: center;
     padding: 50px;
@@ -27,12 +30,9 @@ body {
 
 .footer {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+    padding: 16px;
+    outline: red solid;
 }
 
 .navbar {
@@ -40,7 +40,6 @@ body {
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    /* outline: red solid; */
 }
 
 h1 {
@@ -58,7 +57,7 @@ hr {
     width: 90%;
 }
 
-.navbar .navbar-links {
+.navbar-links {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -69,16 +68,15 @@ hr {
     width: 100%;
 }
 
-.navbar-links a {
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+a {
     text-decoration: none;
     color:rgb(200, 200, 200);
-    flex-shrink: 0;
 }
-
-.footer-links a {
-    text-decoration: none;
-    color: rgb(200, 200, 200);
-    flex-shrink: 0;
-}
-
-
