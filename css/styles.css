@@ -4,6 +4,7 @@ body {
     font-family: georgia;
     color: rgb(200, 200, 200);
     flex-direction: column;
+    outline: white ;
 }
 
 .header {
@@ -26,11 +27,12 @@ body {
 
 .footer {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     position: fixed;
-    text-align: center;
-    justify-content: center;
     bottom: 0;
-    width: 100;
 }
 
 .navbar {
@@ -41,6 +43,13 @@ body {
     /* outline: red solid; */
 }
 
+h1 {
+   margin: 10px 0px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 hr {
     display: flex;
     flex-direction: column;
@@ -49,26 +58,27 @@ hr {
     width: 90%;
 }
 
-.navbar-buttons {
+.navbar .navbar-links {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20%;
+    justify-content: space-evenly;
     font-weight: bold;
     font-size: 20px;
-    /* outline: blue solid; */
+    flex-shrink: 0;
+    outline: blue solid;
+    width: 100%;
 }
 
-a {
+.navbar-links a {
     text-decoration: none;
     color:rgb(200, 200, 200);
-    width: 70px;
     flex-shrink: 0;
 }
 
-h1 {
-   margin: 10px 0px;
+.footer-links a {
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+    flex-shrink: 0;
 }
 
 
